@@ -39,6 +39,8 @@ const app = new Vue({
                 minSalary = 14000;
             } else if (experience === '5') {
                 minSalary = 15000;
+            } else if (experience.charCodeAt(0) > 5){
+                minSalary = 15000;
             }
             return minSalary * coeficent;
         }
