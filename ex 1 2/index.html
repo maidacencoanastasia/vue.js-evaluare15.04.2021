@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maidacenco</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container" id="app">
+    <div class="card ">
+        <h1>{{ username }} This is username.</h1>
+        <div class="form-control">
+            <input
+                    type="date"
+                    :placeholder="placeholderString"
+                    v-bind:value="inputValue"
+                    @input="inputChangeHandler"
+                    v-model="form.date2"
+            />
+            <span>{{form.date2}}</span>
+        </div>
+        <h2> input value:{{ inputValue }}</h2>
+        <!-- <button class="btn" v-on:click="calculateAge">Age</button> -->
+        <h4>Возраст: 2021 - {{userBDate}}={{ calculateAge }}</h4>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="app.js"></script>
+</body>
+</html>

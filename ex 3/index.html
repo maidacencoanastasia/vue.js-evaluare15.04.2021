@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maidacenco</title>
+</head>
+<body>
+
+<div id="app">
+    <div class="container">
+        <p class="question">На каком языке программируете?</p>
+        <form>
+            <p>
+                <label>
+                    <input type="radio" name="language" v-model="language" value="JS">
+                </label> JavaScript
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="language" v-model="language" value="Python">
+                </label> Python
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="language" v-model="language" value="Java">
+                </label> Java
+            </p>
+            <p>Опыт работы? <label>
+                <input v-model="experience" type="text">
+            </label> лет</p>
+        </form>
+        <p>Ваша зарплата <span class="salary"><strong>${{ salary }}</strong> </span></p>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
